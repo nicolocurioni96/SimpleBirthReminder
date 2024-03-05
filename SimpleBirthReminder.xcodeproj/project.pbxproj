@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A15B77212B963DEC00B8D11A /* SimpleBirthReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77202B963DEC00B8D11A /* SimpleBirthReminderApp.swift */; };
-		A15B77232B963DEC00B8D11A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77222B963DEC00B8D11A /* ContentView.swift */; };
-		A15B77252B963DEC00B8D11A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77242B963DEC00B8D11A /* Item.swift */; };
 		A15B77272B963DED00B8D11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15B77262B963DED00B8D11A /* Assets.xcassets */; };
 		A15B772A2B963DED00B8D11A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15B77292B963DED00B8D11A /* Preview Assets.xcassets */; };
+		A15B77322B963FAF00B8D11A /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77312B963FAF00B8D11A /* Birthday.swift */; };
+		A15B77362B96432F00B8D11A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77352B96432F00B8D11A /* HomeView.swift */; };
+		A15B77382B96437600B8D11A /* AddBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77372B96437600B8D11A /* AddBirthdayView.swift */; };
+		A15B77402B975A7200B8D11A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B773F2B975A7200B8D11A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A15B771D2B963DEC00B8D11A /* SimpleBirthReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBirthReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15B77202B963DEC00B8D11A /* SimpleBirthReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBirthReminderApp.swift; sourceTree = "<group>"; };
-		A15B77222B963DEC00B8D11A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A15B77242B963DEC00B8D11A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A15B77262B963DED00B8D11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15B77292B963DED00B8D11A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A15B77312B963FAF00B8D11A /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
+		A15B77352B96432F00B8D11A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A15B77372B96437600B8D11A /* AddBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayView.swift; sourceTree = "<group>"; };
+		A15B773F2B975A7200B8D11A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,9 @@
 		A15B771F2B963DEC00B8D11A /* SimpleBirthReminder */ = {
 			isa = PBXGroup;
 			children = (
-				A15B77202B963DEC00B8D11A /* SimpleBirthReminderApp.swift */,
-				A15B77222B963DEC00B8D11A /* ContentView.swift */,
-				A15B77242B963DEC00B8D11A /* Item.swift */,
+				A15B77332B96417B00B8D11A /* App */,
+				A15B77302B963F8200B8D11A /* Models */,
+				A15B77342B96431F00B8D11A /* Views */,
 				A15B77262B963DED00B8D11A /* Assets.xcassets */,
 				A15B77282B963DED00B8D11A /* Preview Content */,
 			);
@@ -68,6 +72,57 @@
 				A15B77292B963DED00B8D11A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A15B77302B963F8200B8D11A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77312B963FAF00B8D11A /* Birthday.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A15B77332B96417B00B8D11A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77202B963DEC00B8D11A /* SimpleBirthReminderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A15B77342B96431F00B8D11A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A15B773E2B975A6700B8D11A /* Home */,
+				A15B773D2B975A5D00B8D11A /* Detail */,
+				A15B77412B975D9600B8D11A /* Add */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A15B773D2B975A5D00B8D11A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A15B773F2B975A7200B8D11A /* DetailView.swift */,
+			);
+			name = Detail;
+			path = "Detaiòl";
+			sourceTree = "<group>";
+		};
+		A15B773E2B975A6700B8D11A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77352B96432F00B8D11A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A15B77412B975D9600B8D11A /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77372B96437600B8D11A /* AddBirthdayView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15B77232B963DEC00B8D11A /* ContentView.swift in Sources */,
-				A15B77252B963DEC00B8D11A /* Item.swift in Sources */,
+				A15B77322B963FAF00B8D11A /* Birthday.swift in Sources */,
+				A15B77402B975A7200B8D11A /* DetailView.swift in Sources */,
+				A15B77382B96437600B8D11A /* AddBirthdayView.swift in Sources */,
+				A15B77362B96432F00B8D11A /* HomeView.swift in Sources */,
 				A15B77212B963DEC00B8D11A /* SimpleBirthReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
