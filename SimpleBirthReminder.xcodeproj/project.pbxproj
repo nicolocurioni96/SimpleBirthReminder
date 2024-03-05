@@ -13,7 +13,7 @@
 		A15B77322B963FAF00B8D11A /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77312B963FAF00B8D11A /* Birthday.swift */; };
 		A15B77362B96432F00B8D11A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77352B96432F00B8D11A /* HomeView.swift */; };
 		A15B77382B96437600B8D11A /* AddBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B77372B96437600B8D11A /* AddBirthdayView.swift */; };
-		A15B773C2B9649E100B8D11A /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B773B2B9649E100B8D11A /* BirthdayViewModel.swift */; };
+		A15B77402B975A7200B8D11A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B773F2B975A7200B8D11A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		A15B77312B963FAF00B8D11A /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 		A15B77352B96432F00B8D11A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A15B77372B96437600B8D11A /* AddBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayView.swift; sourceTree = "<group>"; };
-		A15B773B2B9649E100B8D11A /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
+		A15B773F2B975A7200B8D11A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 				A15B77332B96417B00B8D11A /* App */,
 				A15B77302B963F8200B8D11A /* Models */,
 				A15B77342B96431F00B8D11A /* Views */,
-				A15B773A2B9649B400B8D11A /* ViewModels */,
 				A15B77262B963DED00B8D11A /* Assets.xcassets */,
 				A15B77282B963DED00B8D11A /* Preview Content */,
 			);
@@ -94,18 +93,36 @@
 		A15B77342B96431F00B8D11A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A15B77352B96432F00B8D11A /* HomeView.swift */,
-				A15B77372B96437600B8D11A /* AddBirthdayView.swift */,
+				A15B773E2B975A6700B8D11A /* Home */,
+				A15B773D2B975A5D00B8D11A /* Detail */,
+				A15B77412B975D9600B8D11A /* Add */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A15B773A2B9649B400B8D11A /* ViewModels */ = {
+		A15B773D2B975A5D00B8D11A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				A15B773B2B9649E100B8D11A /* BirthdayViewModel.swift */,
+				A15B773F2B975A7200B8D11A /* DetailView.swift */,
 			);
-			path = ViewModels;
+			name = Detail;
+			path = "Detaiòl";
+			sourceTree = "<group>";
+		};
+		A15B773E2B975A6700B8D11A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77352B96432F00B8D11A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A15B77412B975D9600B8D11A /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A15B77372B96437600B8D11A /* AddBirthdayView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15B77322B963FAF00B8D11A /* Birthday.swift in Sources */,
+				A15B77402B975A7200B8D11A /* DetailView.swift in Sources */,
 				A15B77382B96437600B8D11A /* AddBirthdayView.swift in Sources */,
 				A15B77362B96432F00B8D11A /* HomeView.swift in Sources */,
-				A15B773C2B9649E100B8D11A /* BirthdayViewModel.swift in Sources */,
 				A15B77212B963DEC00B8D11A /* SimpleBirthReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
